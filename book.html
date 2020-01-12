@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Library</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", rel="stylesheet", type="text/css"/>
+    <link href="styles.css", rel="stylesheet", type="text/css"/>
+  </head>
+  <body>
+    <div id=overlay>
+      <div class="container book-card">
+        <div id="book-cards" class="row no-gutters">
+          <div class="col-md-4">
+            <img id="book-img" class="card-img">
+          </div>
+          <div class="col-md-8">
+            
+            <div class="card-body">
+              <h2 class=display-3 id="book-title">
+                <h2>
+                  <span class="badge badge-dark" id="book-author"></span>
+                </h2>
+              </h2>
+              <p class="card-text" id="book-desc"></p>
+              <hr>
+              <p class="text-muted" id="book-page"></p>
+              <p class="text-muted" id="book-rating"></p>
+              <p class="text-muted" id="book-release"></p>
+              <button id="hide" onclick="hide()" class="btn btn-outline-dark btn-sm">Hide</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container", style="padding: 10px">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <input id="s" autocomplete="off" autofocus class="form-control" required placeholder="Title"/>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-danger" id="clear">X</button>
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="loading"></div>
+    <div id="results">
+      <div id="cards" class="card-columns">
+      </div>
+    </div>
+      
+    
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
