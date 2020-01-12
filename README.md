@@ -1,13 +1,10 @@
-# chat-example
+# Library 2.0
 
-This is the source code for a very simple chat example used for
-the [Getting Started](http://socket.io/get-started/chat/) guide
-of the Socket.IO website.
+Remade my [express-library](https://github.com/ThatAsian11/express-library) project using SocketIO and Express
 
-Please refer to it to learn how to run this application.
+This one looks and behaves almost exactly like Library 1.0 except that the page never reloads and some other refinements (animations, loading gif, etc.)
 
-You can also spin up a free Heroku dyno to test it out:
+I also didn't use a templating engine for this one (Unlike the previous iteration which uses Pug/Jade)
+Everything is rendered using pure Javascript
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/socketio/chat-example)
-
-Besides, the application is deployed on [Now](https://zeit.co/now): https://socketio-chat-example.now.sh/
+Use `npm start` or `nodemon start` to start server
