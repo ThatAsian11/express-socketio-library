@@ -15,12 +15,10 @@
           <div class="col-md-8">
             
             <div class="card-body">
-              <h2 class=display-3 id="book-title">
-                <h2>
-                  <span class="badge badge-dark" id="book-author"></span>
-                </h2>
-              </h2>
-              <p class="card-text" id="book-desc"></p>
+              <h2 class="display-3 text-center" id="book-title"></h2>
+              <p id="book-author" class="h6 text-break text-center text-light bg-secondary p-2 rounded"></p>
+              <br>
+              <p class="card-text bg-light rounded p-2" id="book-desc"></p>
               <hr>
               <p class="text-muted" id="book-page"></p>
               <p class="text-muted" id="book-rating"></p>
@@ -32,20 +30,19 @@
       </div>
     </div>
     <div class="container", style="padding: 10px">
+      <h3 class="text-muted">Search for some books</h3>
       <form action="">
-        <div class="row">
-          <div class="col">
-            <input id="s" autocomplete="off" autofocus class="form-control" required placeholder="Title"/>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-danger" id="clear">X</button>
-            <button class="btn btn-primary">Search</button>
+        <div class="input-group mt-3">
+          <input id="s" autocomplete="off" autofocus class="form-control form-control-lg" required placeholder="Title"/>
+          <div class="input-group-append" id="button-addon4">
+            <button id="clear" class="btn btn-outline-danger btn-lg" type="button">X</button>
+            <button class="btn btn-outline-dark btn-lg">Search</button>
           </div>
         </div>
       </form>
     </div>
     <div id="loading"></div>
-    <div id="results">
+    <div id="results" class="p-2">
       <div id="cards" class="card-columns">
       </div>
     </div>
