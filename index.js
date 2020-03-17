@@ -18,9 +18,6 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
-  });
   socket.on('search', function(msg) {
     io.emit('load');
     let url = 'https://www.googleapis.com/books/v1/volumes?q=' + msg + '&key=' + api;
