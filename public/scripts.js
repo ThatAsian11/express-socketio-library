@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('#book-title').textContent = title;
         document.querySelector('#book-author').textContent = author;
         document.querySelector('#book-desc').innerHTML = desc;
-        document.querySelector('#book-page').textContent = page;
+        document.querySelector('#book-page').textContent = "Page count: " + page;
         document.querySelector('#book-rating').textContent = rating + "/5";
         document.querySelector('#book-release').textContent = release;
-        document.getElementById('overlay').style.display = "block";
+        document.getElementById('overlay').style.display = "block";        
     });
 
     socket.on('searched', results => {

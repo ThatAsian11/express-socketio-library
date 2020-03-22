@@ -21,9 +21,11 @@
     border-radius: 4px;
     padding: 15px;
     background-color: white;
-    overflow: scroll;
+    /* overflow: scroll; */
     animation: popup 0.25s ease-in-out;
-    z-index: 100;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    z-index: 30;
 }
 #loading {
     background: url('loading.gif') no-repeat center center;
@@ -32,13 +34,11 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 9999999;
+    z-index: 10000;
     display: none;
 }
+
 @keyframes popup {
     0%   {transform: scale(0.6)}
-    /* 25%  {background-color:purple; left:10px; top: 0px;}
-    50%  {background-color:blue; left:0px; top:0px;}
-    75%  {background-color:purple; left:10px; top: 0px;} */
     100% {transform: scale(1);}
 }
